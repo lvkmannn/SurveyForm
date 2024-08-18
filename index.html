@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta chartset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    
+    <!-- Title -->
+    <h1 id="title">Survey Form</h1>
+
+    <!-- Description -->
+    <p id="description" class="description">It's just a personal project that takes survey</p>
+
+
+    <div class="form-body">
+    <!-- Form -->
+    <form id="survey-form" method="post">
+        <!-- Name -->
+        <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Enter your name..." required/></label>
+        
+        <!-- Email -->
+        <label for="email" id="email-label">Email: <input id="email" type="email" required placeholder="Enter your email..."/></label>
+        
+        <!-- Number -->
+        <label for="number" id="number-label">Age: <input id="number" type="number" min="1" max="120" placeholder="Enter your age..."/></label>
+        
+        <!-- Dropdown -->
+        <label for="dropdown">Select your role:
+            <select id="dropdown">
+                <option value="" disabled selected>(select one)</option>
+                <option value="1">Student</option>
+                <option value="2">Worker</option>
+            </select>
+        </label>   
+
+        <!-- Radio -->
+        <p class="spacing">Account type (required)</p>    
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" value="personal" class="inline" checked /> Personal</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" value="business" class="inline" /> Business</label>
+        
+        <!-- Checkbox -->
+        <p class="spacing">What is your favourite programming language? (Check all that apply)</p>  
+        <label>
+            <input type="checkbox" name="prog-lang" value="Java" class="inline"> Java
+        </label>
+        <label>
+            <input type="checkbox" name="prog-lang" value="Python" class="inline"> Python
+        </label>
+        <label>
+            <input type="checkbox" name="prog-lang" value="C++" class="inline"> C++
+        </label>
+        <label>
+            <input type="checkbox" name="prog-lang" value="JavaScript" class="inline"> JavaScript
+        </label>
+        <label>
+            <input type="checkbox" name="prog-lang" value="R" class="inline"> R
+        </label>
+
+        <!-- Additional Comments -->
+        <p class="spacing">Any comments/suggestion?</p>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+
+        <!-- Submit -->
+        <input type="submit" id="submit" value="Submit" />
+    </form>
+
+    <!-- Footer-->
+    <footer>
+        <p>
+          <a href="https://github.com/lvkmannn" target="_blank">Visit my Github</a>
+        </p>
+        <p class="address">Kuala Lumpur, Malaysia</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.pexels.com/photos/5473298/pexels-photo-5473298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    color: white;
+}
+
+h1{
+    margin: 1em auto;
+    text-align: center;
+    color: azure;
+}
+
+.description {
+    font-style: italic;
+    text-align: center;
+}
+
+.spacing {
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+
+form {
+    width: 60vw;
+    max-width: 550px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.form-body {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 550px;
+    border-radius: 1%;
+}
+
+input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+
+input, textarea {
+    border: 1px solid #0a0a23;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: darkblue;
+    border-color: white;
+    min-width: 300px;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #008000;
+}
+
+/* FOOTER */
+  
+footer {
+    font-size: 14px;
+    text-align: center;
+}
+  
+.address {
+    margin-bottom: 5px;
+}
+  
+a {
+    color: white;
+}
+  
+a:visited {
+    color: plum;
+}
+  
+a:hover {
+    color: blue;
+}
+  
+a:active {
+    color: brown;
+}
